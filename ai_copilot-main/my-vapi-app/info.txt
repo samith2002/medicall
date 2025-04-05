@@ -1,0 +1,13 @@
+This React component acts as the frontend interface for interacting with Vapi.ai's voice assistant directly from a web browser. Its main jobs are:
+
+Connecting to Vapi: It initializes the Vapi Web SDK using your public API key.
+
+Managing the Call Lifecycle: It provides buttons to start and stop the voice call session with your configured Vapi assistant.
+
+Handling Communication: It listens for events from the Vapi SDK (like the call starting/ending, errors, and messages) and reacts accordingly.
+
+Displaying Information: It shows the current status of the call (idle, connecting, connected, etc.) and displays the conversation transcript (both user speech recognised by Vapi and the assistant's text responses).
+
+State Management: It uses React's useState hook to keep track of the call's state (active or not, current status, transcript content, any errors) and re-renders the UI whenever this state changes.
+
+Resource Management: It uses useEffect to set up the Vapi connection and event listeners when the component mounts, and crucially, includes a cleanup function to remove those listeners when the component unmounts, preventing memory leaks. It also uses useRef to hold the Vapi instance stably across re-renders without triggering unnecessary effect re-runs.

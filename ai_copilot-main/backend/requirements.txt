@@ -1,0 +1,10 @@
+vapi_python
+groq
+fastapi
+uvicorn
+python-dotenv
+pydantic
+httpx
+websockets
+python-multipart
+modal 
