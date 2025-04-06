@@ -1,30 +1,55 @@
 
-# 🏥 MediCall - AI Voice Assistant for Healthcare
+---
 
-![MediCall Banner](https://user-images.githubusercontent.com/your-placeholder-banner.png) <!-- Optional: Add a relevant image -->
+# 🏥 MediCall – AI Voice Assistant for Healthcare
+
+![MediCall Banner](https://user-images.githubusercontent.com/your-placeholder-banner.png) <!-- Optional image, update if needed -->
 
 ## ✨ Overview
 
-**MediCall** is an AI-powered voice assistant designed to revolutionize hospital appointment systems. It allows patients to schedule or cancel appointments over a simple phone call — no apps, no forms, no waiting. This smart voice interface ensures no call goes unanswered, even during peak hours or after office hours, enhancing both patient satisfaction and hospital efficiency.
+**MediCall** is an AI-powered voice assistant designed to automate and simplify hospital appointment scheduling. Patients can book or cancel appointments just by speaking — no apps, no forms, no waiting. It ensures no call goes unanswered, improving hospital workflow and patient satisfaction.
+
+🔗 **Live Demo:** [https://vapiiiii.netlify.app/](https://vapiiiii.netlify.app/)
+
+---
 
 ## 💡 Problem Statement
 
-Front-desk staff at hospitals often face call overloads, leading to missed appointments and dissatisfied patients. MediCall steps in to ensure 24/7 availability, automating the entire appointment booking process using AI and natural conversation.
+Hospital front desks often get overwhelmed with calls, especially during peak hours. Patients struggle to get through, leading to missed appointments and frustration. MediCall solves this by offering a smart, 24/7 voice-based appointment assistant that handles patient queries efficiently.
 
 ---
 
-## 🧠 Key Features
+## 🚀 Features
 
-- 🤖 AI-powered voice assistant for appointment scheduling and cancellation  
-- 📞 Real-time, natural conversations with patients  
-- 📅 Checks doctor availability and schedules appointments  
-- 🏥 Integrates with hospital database (Supabase)  
-- 🌍 Available 24/7 — works even after office hours  
-- 👴 Elderly-friendly voice interface, no app required  
+- 🤖 AI voice assistant for appointment **booking and cancellation**
+- 🗣️ Natural conversation via voice — no buttons or forms
+- 🏥 Real-time doctor availability check
+- 📅 Appointment scheduling directly into hospital's system
+- 🕐 Works 24/7, even during off-hours
+- 👴 Friendly for elderly or tech-averse users
 
 ---
 
-## 🔧 Tech Stack
+## 🧠 How It Works
+
+1. **Call the Hospital / Visit**: [Talk to MediCall](https://vapiiiii.netlify.app/)
+2. **AI Conversation**: Provides details like name, age, phone number, appointment type, doctor preference, and time slots.
+3. **Database Integration**: Looks up real-time availability via Supabase.
+4. **Confirmation**: Confirms or cancels your appointment through a natural voice interface.
+
+---
+
+## 🧪 Demo Videos
+
+🎥 **Appointment Booking**  
+[Watch Now](https://drive.google.com/file/d/1-bMVQAMlLaDB_PM7a8ba4KuyRm6P8Q9Z/view?usp=drive_link)
+
+🎥 **Appointment Cancellation**  
+[Watch Now](https://drive.google.com/file/d/1QbMeVexWaf58BK50ICwGTNVFJVJA0TKj/view?usp=sharing)
+
+---
+
+## ⚙️ Tech Stack
 
 | Component         | Technology                          |
 |------------------|--------------------------------------|
@@ -36,62 +61,44 @@ Front-desk staff at hospitals often face call overloads, leading to missed appoi
 
 ---
 
-## 🧪 How It Works
-
-1. **Call the Hospital:** Visit [Talk with MediCall](https://vapiiiii.netlify.app/)
-2. **Have a Conversation:** The assistant will ask your name, age, appointment type, doctor preferences, and timing.
-3. **Checks Database:** Searches for doctor availability in real-time.
-4. **Confirms Appointment:** Books or cancels your appointment — all via natural speech.
-
----
-
-## 📹 Demo Videos
-
-- 📆 [Appointment Booking Demo](https://drive.google.com/file/d/1-bMVQAMlLaDB_PM7a8ba4KuyRm6P8Q9Z/view?usp=drive_link)  
-- ❌ [Appointment Cancellation Demo](https://drive.google.com/file/d/1QbMeVexWaf58BK50ICwGTNVFJVJA0TKj/view?usp=sharing)
-
----
-
 ## 🌍 Impact
 
-- Reduces hospital call traffic  
-- Helps elderly or tech-challenged patients  
-- Minimizes human error in appointment booking  
-- Improves patient experience & care continuity  
+MediCall enhances healthcare accessibility for all — especially underserved communities, the elderly, and those with limited digital literacy. It ensures smoother hospital operations and higher patient satisfaction, paving the way for compassionate AI in healthcare.
 
 ---
 
-## 🚀 Future Plans
+## 🧭 Future Enhancements
 
-- 🌐 Multilingual Support  
-- 📁 Integration with Electronic Health Records (EHR)  
-- 🔔 Automated SMS reminders & follow-ups  
-- 📞 Handle thousands of concurrent calls  
+- 🌐 Multilingual support
+- 📁 Integration with EHR systems
+- 🔔 Automated reminders and follow-ups
+- 📞 Scale to multiple hospitals with high concurrency
 
 ---
 
 ## 👥 Team Disruptors
 
-| Name                        | Major                 |
-|-----------------------------|------------------------|
-| Samith Deshai Siddo         | Computer Science       |
-| Hyndavi Madala              | Computer Science       |
-| Mahesh Bhupathi Balu Polisetty | Data Engineering   |
-| Aditya Pujari               | Artificial Intelligence|
-| Bharat                      | Artificial Intelligence|
+| Name                            | Major                     |
+|---------------------------------|----------------------------|
+| Samith Deshai Siddo             | Computer Science           |
+| Hyndavi Madala                  | Computer Science           |
+| Mahesh Bhupathi Balu Polisetty | Data Engineering           |
+| Aditya Pujari                   | Artificial Intelligence    |
+| Bharat                          | Artificial Intelligence    |
 
 ---
 
-## 🔗 Repository
+## 📂 Project Links
 
-**GitHub**: [github.com/samith2002/medicall](https://github.com/samith2002/medicall)
+- 🔗 **Live Site:** [https://vapiiiii.netlify.app/](https://vapiiiii.netlify.app/)
+- 🗂️ **GitHub Repo:** [https://github.com/samith2002/medicall](https://github.com/samith2002/medicall)
 
 ---
 
-## ❤️ Final Thought
+## ❤️ Final Note
 
-> *MediCall isn’t here to replace people — it’s here to help them.*
+> “MediCall isn’t here to replace people — it’s here to help them.”
 
-By making appointment scheduling seamless and accessible, MediCall supports both hospital staff and patients, creating a more compassionate and efficient healthcare experience.
+It gives hospital staff more breathing room and ensures that every patient can access care, anytime. Compassionate tech that truly makes a difference.
 
 ---
