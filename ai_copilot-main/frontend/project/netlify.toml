@@ -17,7 +17,15 @@
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
-  external_node_modules = ["@supabase/supabase-js"]
+  external_node_modules = ["@supabase/supabase-js", "@google/generative-ai"]
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
 
 [build.environment]
   NODE_VERSION = "18"
+
+[template.environment]
+  SUPABASE_URL = "Your Supabase project URL"
+  SUPABASE_ANON_KEY = "Your Supabase anonymous key"
+  GEMINI_API_KEY = "Your Google Gemini API key"
