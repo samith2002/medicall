@@ -1,11 +1,10 @@
-import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen">
       <Header />
       <HeroSection />
       <Footer />

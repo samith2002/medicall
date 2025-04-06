@@ -2,10 +2,20 @@ import { useState, useEffect, useRef } from 'react';
 import { Mic } from 'lucide-react';
 import Vapi from "@vapi-ai/web";
 
-function TalkToVAPIButton() {
+interface TalkToVAPIButtonProps {
+  onCallStateChange: (isActive: boolean) => void;
+}
+
+
+function TalkToVAPIButton({ onCallStateChange }: TalkToVAPIButtonProps) {
   const [isListening, setIsListening] = useState(false);
   const [microphonePermission, setMicrophonePermission] = useState<boolean | null>(null);
   const vapiInstanceRef = useRef<Vapi | null>(null);
+
+  useEffect(() => {
+    onCallStateChange(isListening);
+  }, [isListening, onCallStateChange]);
+
 
   useEffect(() => {
     const checkMicrophonePermission = async () => {
@@ -86,14 +96,15 @@ function TalkToVAPIButton() {
   return (
     <div className="text-center">
       <button
-        className={`bg-transparent hover:bg-gray-700 text-white py-4 px-8 rounded-full border-2 
-          ${isListening ? 'border-green-400 animate-pulse' : 'border-white'} 
-          font-bold flex items-center justify-center transition-all duration-300`}
+        className={`py-4 px-8 rounded-full border-2 font-bold flex items-center justify-center transition-all duration-300
+          ${isListening 
+            ? 'bg-[#28a745] border-[#28a745] text-white' 
+            : 'bg-gray-400 border-gray-400 text-white hover:bg-gray-500 hover:border-gray-500'}`}
         onClick={handleTalkToVAPI}
         disabled={microphonePermission === null || microphonePermission === false}
       >
-        <Mic className={`w-6 h-6 mr-2 ${isListening ? 'text-green-400' : ''}`} />
-        {isListening ? "END CALL" : "TALK TO VAPI"}
+        <Mic className="w-6 h-6 mr-2" />
+        {isListening ? "END CALL" : "CALL VAPI"}
         {isListening && (
           <span className="ml-2 flex space-x-1">
             <span className="animate-bounce delay-100">.</span>
