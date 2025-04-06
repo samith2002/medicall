@@ -104,7 +104,7 @@ function TalkToVAPIButton({ onCallStateChange }: TalkToVAPIButtonProps) {
         disabled={microphonePermission === null || microphonePermission === false}
       >
         <Mic className="w-6 h-6 mr-2" />
-        {isListening ? "END CALL" : "CALL VAPI"}
+        {isListening ? "END CALL" : "CALL"}
         {isListening && (
           <span className="ml-2 flex space-x-1">
             <span className="animate-bounce delay-100">.</span>
