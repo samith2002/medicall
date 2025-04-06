@@ -74,9 +74,69 @@ function TalkToVAPIButton() {
 
       // Use your assistant ID from the Vapi dashboard
       const assistantId = "a8e87a13-cb42-438e-8ecc-9de4ca9dd6f2";
+      const assistantOverrides = {
+        analysisPlan: {
+          summaryPlan: {
+            messages: [
+              {
+                content: "Summarize the appointment scheduling call including: patient name, doctor name, appointment date and time, and any special notes or requirements discussed.",
+                role: "system"
+              }
+            ],
+            enabled: true,
+            timeoutSeconds: 1
+          },
+          structuredDataPlan: {
+            messages: [
+              {
+                content: "Extract the following information: patientName, doctorName, appointmentDate, appointmentTime, specialNotes",
+                role: "system"
+              }
+            ],
+            enabled: true,
+            schema: {
+              type: "object" as const, // Fixed: Use literal type "object"
+              properties: {
+                patientName: { 
+                  type: "string" as const, // Fixed: Use literal type "string"
+                  description: "Name of the patient"
+                },
+                doctorName: { 
+                  type: "string" as const, // Fixed: Use literal type "string"
+                  description: "Name of the doctor"
+                },
+                appointmentDate: { 
+                  type: "string" as const, // Fixed: Use literal type "string"
+                  description: "Date of appointment"
+                },
+                appointmentTime: { 
+                  type: "string" as const, // Fixed: Use literal type "string"
+                  description: "Time of appointment"
+                },
+                specialNotes: { 
+                  type: "string" as const, // Fixed: Use literal type "string"
+                  description: "Any additional notes"
+                }
+              },
+              required: ["patientName", "doctorName", "appointmentDate", "appointmentTime"]
+            },
+            timeoutSeconds: 1
+          },
+          successEvaluationPlan: {
+            messages: [
+              {
+                content: "Evaluate if all required appointment details were successfully captured and confirmed.",
+                role: "system"
+              }
+            ],
+            enabled: true,
+            timeoutSeconds: 1
+          }
+        }
+      };
 
-      // Start the Vapi call with the assistant ID
-      await vapiInstanceRef.current.start(assistantId);
+      // Start the Vapi call with the assistant ID and overrides
+      await vapiInstanceRef.current.start(assistantId, assistantOverrides);
     } catch (error) {
       console.error("Error starting Vapi call:", error);
       alert("Failed to start call. Please try again.");
