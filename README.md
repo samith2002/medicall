@@ -1,6 +1,3 @@
-Here’s a user-friendly and well-structured `README.md` for your GitHub project **MediCall**:
-
----
 
 # 🏥 MediCall - AI Voice Assistant for Healthcare
 
@@ -98,5 +95,3 @@ Front-desk staff at hospitals often face call overloads, leading to missed appoi
 By making appointment scheduling seamless and accessible, MediCall supports both hospital staff and patients, creating a more compassionate and efficient healthcare experience.
 
 ---
-
-Let me know if you'd like a markdown version copy-pasted or if you want help adding badges or deploying instructions!
