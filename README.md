@@ -57,7 +57,7 @@ Hospital front desks often get overwhelmed with calls, especially during peak ho
 | Backend          | Supabase, Netlify Serverless Functions |
 | LLM              | Gemini 2.0 Flash                     |
 | Speech to Text   | Transcription Model                  |
-| Text to Speech   | Vapi                                 |
+| Text to Speech   | Eleven Labs                             |
 
 ---
 
