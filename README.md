@@ -82,9 +82,7 @@ MediCall enhances healthcare accessibility for all — especially underserved co
 |---------------------------------|----------------------------|
 | Samith Deshai Siddo             | Computer Science           |
 | Hyndavi Madala                  | Computer Science           |
-| Mahesh Bhupathi Balu Polisetty | Data Engineering           |
-| Aditya Pujari                   | Artificial Intelligence    |
-| Bharat                          | Artificial Intelligence    |
+| Mahesh Bhupathi Balu Polisetty | Data Engineering     
 
 ---
 
